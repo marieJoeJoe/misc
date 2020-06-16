@@ -1,3 +1,3 @@
 # coding_test
+simple algorithm question
 
-coding training
