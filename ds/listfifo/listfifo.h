@@ -2,22 +2,26 @@
 #define __LISTFIFO_H__
 
 
-typedef struct linkedlist
+typedef struct llnode
 {
-	struct linkedlist* next;
+	struct llnode* next;
 	unsigned int data;
-}ll_t;
+}node_t;
 
 
-typedef struct linkedlistfifo
+typedef struct fifo
 {
-	ll_t *front, *rear;
-}llfifo_t;
+	node_t *front;
+	node_t *rear;
+}fifo_t;
 
-llfifo_t* llfifo_init();
-void llfifo_newNode(llfifo_t *f,unsigned int k);
+node_t* newNode(unsigned int);
 
-void llfifo_enqueue(llfifo_t *f,unsigned int k);
-void llfifo_dequeue(llfifo_t *f,unsigned int* k);
+fifo_t* create_fifo(void);
+
+void enqueue(fifo_t*, unsigned int);
+
+void dequeue(fifo_t*, unsigned int*) ;
+
 
 #endif

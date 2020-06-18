@@ -1,7 +1,7 @@
 DIR=$(PWD)
 #BIN=$(DIR)/tcpcali
 BIN=llfifo
-CFLAG=
+CFLAG= -g
 LFLAG=
 CC=gcc
 AR=ar
