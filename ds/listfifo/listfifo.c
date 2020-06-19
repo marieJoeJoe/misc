@@ -26,7 +26,6 @@ void enqueue(fifo_t* q, unsigned int k){
     q->rear = temp;
     return;
   }
-  //printf("%p %p\n",q,q->rear);
   q->rear->next = temp;
   q->rear = temp;
 }
