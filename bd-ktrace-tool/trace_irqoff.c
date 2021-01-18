@@ -34,8 +34,8 @@ static u32 div64_mod = 0;
 	u64 x=X;					\
 	u64 y=Y;					\
 	MOD = do_div(x,y);			\
-	R=X;						\
-	X;							\
+	R=x;						\
+	x;							\
 })
 
 #define U64DVD(X,Y) U64DIVISION(div64_ret,X,Y,div64_mod)
