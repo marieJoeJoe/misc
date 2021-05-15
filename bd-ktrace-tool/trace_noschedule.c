@@ -45,8 +45,8 @@ static u32 div64_mod = 0;
 	u64 x=X;					\
 	u64 y=Y;					\
 	MOD = do_div(x,y);			\
-	R=X;						\
-	X;							\
+	R=x;						\
+	x;							\
 })
 
 
