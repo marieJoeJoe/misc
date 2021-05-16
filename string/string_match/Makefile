@@ -1,6 +1,6 @@
 DIR=$(PWD)
 BIN=string_algo
-CFLAG+=-O0
+CFLAG=
 LFLAG= 
 CC=gcc
 AR=ar
