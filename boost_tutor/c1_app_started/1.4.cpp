@@ -1,6 +1,6 @@
 #include <boost/optional.hpp>
 #include <iostream>
-#include <stdlib.h>
+#include <cstdlib>
 
 //trick 5
 
