@@ -1,5 +1,6 @@
 
-CXX = g++
+#CXX = g++
+CXX = clang++
 
 SOURCE_CXX = $(foo).cpp
 TARGET = $(foo)
